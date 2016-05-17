@@ -1,0 +1,6 @@
+<h1>Find some food:</h1>
+<%= form_tag '/food/#{id}' do %>
+  <%= label_tag :term %>
+  <%= text_field_tag :term %>
+  <%= submit_tag %>
+<% end %>

@@ -1,0 +1,9 @@
+
+
+
+<h1>Enter a search term:</h1>
+<%= form_tag '/food' do %>
+  <%= label_tag :term %>
+  <%= text_field_tag :term %>
+  <%= submit_tag %>
+<% end %>
