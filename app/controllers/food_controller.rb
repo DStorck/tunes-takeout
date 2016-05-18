@@ -7,11 +7,14 @@ class FoodController < ApplicationController
   def show
 
     @search = TunesTakeoutWrapper.search(params[:term])
-    @music = TunesTakeoutWrapper.music(@search).first
+    @music = TunesTakeoutWrapper.music(@search)
     @music_stuff = []
-    @music.each do |type, id|
+    @music.each do |id, type|
       @music_stuff << TunesTakeoutWrapper.music_search(id, type)
+    
     end
+
+
 
   end
   #

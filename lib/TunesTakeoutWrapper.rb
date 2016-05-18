@@ -21,7 +21,7 @@ BASE_URL = "https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=
     end
   end
 
-  def self.music_search(type, id)  #move this to music model
+  def self.music_search(id, type)  #move this to music model
     case type
     when "album" then search = RSpotify::Album.find(id)
     when "track" then search = RSpotify::Track.find(id)
