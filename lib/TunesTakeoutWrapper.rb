@@ -7,9 +7,4 @@ BASE_URL = "https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=
     @response = HTTParty.get(BASE_URL + "#{@search_term}" + "&limit=3&seed=banana")
   end
 
-  
-
-
-
-
 end
