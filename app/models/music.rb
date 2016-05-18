@@ -6,7 +6,7 @@ class Music < ActiveRecord::Base
   def initialize(data)
     @item_id = data[:id]
     @type = data[:name]
-    @name = data[:url]
+    @name = data.name
     @url = data[:image_url]
     @image_url = data[:phone]
   end

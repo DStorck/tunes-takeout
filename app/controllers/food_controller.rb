@@ -1,5 +1,6 @@
 require 'yelp'
 require_relative "../../lib/TunesTakeoutWrapper"
+
 class FoodController < ApplicationController
 # BASE_URL = "https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query="
 

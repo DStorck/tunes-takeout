@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+ .spot-logo img{
+   width: 40px;
+ }

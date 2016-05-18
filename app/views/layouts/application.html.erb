@@ -2,14 +2,31 @@
 <html>
 <head>
   <title>TunesTakeout</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <main class="container">
+  <nav class="navbar navbar-default">
+    <ul class="nav navbar-nav">
+      <div class="spot-logo">
+      <li><%= image_tag "Spotify_Icon_RGB_Green.png" %></li>
+      </div>
+      <li><%= "Hi #{ current_user.name }!" if current_user %></li>
+      <li><%= image_tag current_user.photo_url if current_user %></li>
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Log In", '/auth/spotify' unless current_user %></li>
+      <li><%= link_to "Log Out", logout_path, method: :delete if current_user%></li>
+    </ul>
+  </nav>
+  <%= yield %>
+</main>
 
 
-<%= yield %>
+
 
 </body>
 </html>
