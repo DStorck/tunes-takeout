@@ -24,7 +24,6 @@ class Music < ActiveRecord::Base
     case type
     when "album" then search = RSpotify::Album.find(id)
     when "track" then search = RSpotify::Track.find(id)
-    when "playlist" then search = RSpotify::Playlist.find(id)
     when "artist" then search = RSpotify::Artist.find(id)
     end
     search

@@ -13,6 +13,7 @@
   <nav class="navbar navbar-default">
     <ul class="nav navbar-nav">
       <div class="spot-logo">
+        <%= link_to "Listen to Spotify Online!", "https://play.spotify.com/browse" if current_user %>
       <li><%= image_tag "Spotify_Icon_RGB_Green.png" %></li>
       </div>
       <li><%= "Hi #{ current_user.name }!" if current_user %></li>
