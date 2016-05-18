@@ -16,9 +16,9 @@ BASE_URL = "https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=
     @music_info = response["suggestions"]
     @music_array = []
     @music_info.map do |music|
-    @music_array << [music["music_id"], music["music_type"]]
-    @music_array.first
+     @music_array << [music["music_id"], music["music_type"]]
     end
+    return @music_array
   end
 
   def self.music_search(id, type)  #move this to music model

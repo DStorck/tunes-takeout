@@ -6,17 +6,28 @@ class FoodController < ApplicationController
 
   def show
 
+
     @search = TunesTakeoutWrapper.search(params[:term])
     @music = TunesTakeoutWrapper.music(@search)
+    @music = reject_playlists(@music)
     @music_stuff = []
+
     @music.each do |id, type|
       @music_stuff << TunesTakeoutWrapper.music_search(id, type)
-    
     end
+    @music_stuff.first
 
 
 
   end
+
+  def reject_playlists(music_array)
+    music_array.reject do |id, type|
+      type == "playlist"
+    end
+  end
+
+
   #
   # def show
   #   @search_term = params[:term]

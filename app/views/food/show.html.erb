@@ -1,4 +1,9 @@
 
 
 
-<h1> <%= @music_stuff %> </h1>
+ <% @music_stuff.each do |thing| %>
+ <%= thing.name %>
+ <%= thing.type %>
+ <br>
+
+ <% end %>

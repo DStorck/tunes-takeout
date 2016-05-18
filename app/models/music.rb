@@ -30,4 +30,12 @@ class Music < ActiveRecord::Base
     search
   end
 
+  private
+
+  def reject_playlists(music_array)
+    music_array.reject do |id, type|
+      type == "playlist"
+    end
+  end
+
 end
