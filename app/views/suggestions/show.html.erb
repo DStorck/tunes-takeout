@@ -1,0 +1,26 @@
+
+<h2>Pairings </h2>
+<% @pairings.each do |music, restaurant| %>
+Listen to <%= music.name %> at
+<%= link_to restaurant.business.name, "https://www.yelp.com/biz/#{restaurant.business.id}"  %> 
+<%= image_tag restaurant.business.image_url%>
+<br>
+<% end %>
+
+
+
+
+
+<h2> Music </h2>
+<% @music_stuff.each do |thing| %>
+<%= thing.name %>
+<%= thing.type %>
+<br>
+
+<% end %>
+
+<h2> Food </h2>
+<% @restaurants.each do |a| %>
+  <%= a.business.name %>
+  <br>
+  <% end %>

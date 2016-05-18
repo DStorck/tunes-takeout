@@ -17,8 +17,9 @@ class Music < ActiveRecord::Base
     @music_info.map do |music|
       @music_array << [music["music_type"], music["music_id"]]
     end
-    @music_array.first
+    @music_array
   end
+
 
   def self.music_search(type, id)  #move this to music model
     case type

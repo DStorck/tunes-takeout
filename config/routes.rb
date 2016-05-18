@@ -8,7 +8,7 @@ root "food#index"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 post '/user' => "music#show" , as: :show
-post '/food' => "food#show", as: :pair
+post '/suggestions' => "suggestions#show"
 resources :food
 resources :user
 get '/auth/:provider/callback' => 'sessions#create'
