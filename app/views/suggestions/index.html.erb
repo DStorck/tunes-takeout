@@ -23,7 +23,7 @@
         <% if @favorites.include? id %>
           <%= submit_tag "❤" %>
           <% else %>
-          <%= submit_tag "Favorite" , class: 'btn btn-primary'%>
+          <%= submit_tag "Fav" , class: 'btn btn-primary'%>
           <% end %>
         <% end %>
       </div>
@@ -33,7 +33,7 @@
         <iframe src="https://embed.spotify.com/?uri=<%= "#{music.uri}" %>"
           width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
       </div>
-      
+
 
       <div class= "col-md-3 food">
         <%= link_to restaurant.business.name, "https://www.yelp.com/biz/#{restaurant.business.id}"  %><br>
