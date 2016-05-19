@@ -14,7 +14,7 @@ class SuggestionsController < ApplicationController
       music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
       @pairings << [music, restaurant, suggestion["id"]]
     end
-    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid) if current_user
 
 
 
@@ -43,7 +43,7 @@ class SuggestionsController < ApplicationController
       @top_pairings << [music, restaurant, suggestion["id"]]
     end
     @top_pairings
-    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid) if current_user
 
   end
 

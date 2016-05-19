@@ -17,21 +17,32 @@ class TunesTakeoutWrapperTest < ActiveSupport::TestCase
         assert_equal choices, 4
       end
 
-      it "will retur top 20 choices to index" do
-
+      it "returns suggestions that contain food_ids", :vcr do
+        refute_nil @pizza_pairing["suggestions"].first["food_id"]
       end
 
-      it "can favorite pairings" do
+      it "returns suggestions that contain music ids", :vcr do
+        refute_nil @pizza_pairing["suggestions"].first["music_id"]
       end
 
-      it 'can unfavorite pairings' do
+      it "returns suggestions that contain music types", :vcr do
+        refute_nil @pizza_pairing["suggestions"].first["music_type"]
       end
 
-      it 'can collect ids of all favorite pairings' do
-      end
-
-      it 'can turn a collection of favorite ids into a collection of suggestions' do
-      end
+      # it "will return top 20 choices to index" do
+      # end
+      #
+      # it "can favorite pairings" do
+      # end
+      #
+      # it 'can unfavorite pairings' do
+      # end
+      #
+      # it 'can collect ids of all favorite pairings' do
+      # end
+      #
+      # it 'can turn a collection of favorite ids into a collection of suggestions' do
+      # end
 
     end
 
