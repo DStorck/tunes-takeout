@@ -52,6 +52,12 @@ class SuggestionsController < ApplicationController
     redirect_to root_path
   end
 
+  def unfavorite
+    TunesTakeoutWrapper.unfavorite(current_user.uid, params[:id])
+    redirect_to root_path
+  end
+
+
 
   def faves
     @fav_ids = TunesTakeoutWrapper.favorite_ids(current_user.uid)

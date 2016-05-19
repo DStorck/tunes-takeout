@@ -20,6 +20,10 @@ FAV_URL = "https://tunes-takeout-api.herokuapp.com/"
     HTTParty.post(FAV_URL + "/v1/users/#{userid}/favorites", body: { "suggestion": "#{id}" }.to_json )
   end
 
+  def self.unfavorite(userid, id)
+    HTTParty.delete(FAV_URL + "/v1/users/#{userid}/favorites", body: { "suggestion": "#{id}" }.to_json )
+  end
+
   def self.favorite_ids(userid) #collects favorite ids
     @response = HTTParty.get(FAV_URL + "/v1/users/#{userid}/favorites")
     @favorites = @response["suggestions"]

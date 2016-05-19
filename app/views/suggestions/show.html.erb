@@ -8,9 +8,9 @@
       <%= form_tag favorite_path, method: :post do %>
       <%= hidden_field_tag :id, id %>
       <% if @favorites.include? id %>
-        <%= submit_tag "❤" %>
+        <%= submit_tag "❤" , class: "btn btn-danger"%>
         <% else %>
-        <%= submit_tag "Fav" , class: 'btn btn-primary'%>
+        <%= submit_tag "Fav" , class: 'btn btn-warning'%>
         <% end %>
       <% end %>
     </div>

@@ -18,12 +18,16 @@
 
       <div class= "col-md-1 favorite">
 
-        <%= form_tag favorite_path, method: :post do %>
-        <%= hidden_field_tag :id, id %>
         <% if @favorites.include? id %>
-          <%= submit_tag "❤" %>
-          <% else %>
-          <%= submit_tag "Fav" , class: 'btn btn-primary'%>
+
+         <%= form_tag favorite_path, method: :delete do %>
+           <%= hidden_field_tag :id, id %>
+           <%= submit_tag "❤" , class: "btn btn-danger"%>
+          <% end %>
+        <% else %>
+          <%= form_tag favorite_path, method: :post do %>
+          <%= hidden_field_tag :id, id %>
+          <%= submit_tag "Fav" , class: 'btn btn-warning'%>
           <% end %>
         <% end %>
       </div>
