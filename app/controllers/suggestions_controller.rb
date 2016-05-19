@@ -15,6 +15,7 @@ class SuggestionsController < ApplicationController
     end
     # @music_stuff.first
     @pairings = @music_stuff.zip(@restaurants)
+    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
   end
 
   def index
@@ -26,6 +27,8 @@ class SuggestionsController < ApplicationController
       @top_pairings << [music, restaurant, suggestion["id"]]
     end
     @top_pairings
+    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+
   end
 
   def favorite
