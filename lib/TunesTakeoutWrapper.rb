@@ -11,7 +11,7 @@ FAV_URL = "https://tunes-takeout-api.herokuapp.com/"
 
   def self.top_twenty
     @initial_response = HTTParty.get("http://tunes-takeout-api.herokuapp.com/v1/suggestions/top?limit=20")
-    return "" if @initial_response.nil?
+    return [] if @initial_response.nil?
     @tat_ids = @initial_response["suggestions"]
     @top_pairings = []
     @tat_ids.each do |suggestion_id|
@@ -31,6 +31,19 @@ FAV_URL = "https://tunes-takeout-api.herokuapp.com/"
   def self.favorite_ids(userid)
     @response = HTTParty.get(FAV_URL + "/v1/users/#{userid}/favorites")
     @favorites = @response["suggestions"]
+  end
+
+  def suggestion_ids_into_info_array(sug_id_array)
+    @info = []
+    fav_id_array.each do |suggestion_id|
+      @info << HTTParty.get(FAV_URL + "/v1/suggestions/" + "#{suggestion_id}")
+    end
+  end
+  @array_of_hashes = []
+  @info.each do |info|
+    @array_of_hashes << info['suggestion']
+  end
+  @array_of_hashes
   end
 
 end

@@ -53,6 +53,11 @@ class SuggestionsController < ApplicationController
   end
 
 
+  def faves
+    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+  end
+
+
 
   def reject_playlists(music_array)
     music_array.reject do |id, type|

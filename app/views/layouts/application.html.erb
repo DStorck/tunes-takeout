@@ -21,6 +21,7 @@
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Log In", '/auth/spotify' unless current_user %></li>
       <li><%= link_to "Log Out", logout_path, method: :delete if current_user%></li>
+      <li><%= link_to "Favorites", favorite_path, method: :get if current_user %> </li>
     </ul>
   </nav>
   <%= yield %>
