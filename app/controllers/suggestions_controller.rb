@@ -15,6 +15,7 @@ class SuggestionsController < ApplicationController
     end
     @music_stuff.first
     @pairings = @music_stuff.zip(@restaurants)
+    
 
 
 

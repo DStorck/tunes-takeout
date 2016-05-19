@@ -37,5 +37,6 @@ class Music < ActiveRecord::Base
       type == "playlist"
     end
   end
+  # embed into paage to play it     https://play.spotify.com/track/2hitsKa8SthKhRJBXUHbIv
 
 end

@@ -4,6 +4,8 @@
 Listen to <%= link_to music.name , music.external_urls["spotify"]%> at
 <%= link_to restaurant.business.name, "https://www.yelp.com/biz/#{restaurant.business.id}"  %>
 <%= image_tag restaurant.business.image_url%>
+<iframe src="https://embed.spotify.com/?uri=<%= "#{music.uri}" %>"
+width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
 
 <br>
 <% end %>
