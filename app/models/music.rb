@@ -11,7 +11,7 @@ class Music < ActiveRecord::Base
     # @image_url = data[:phone]
   end
 
-  def self.music(response) #move this to music model
+  def self.create_music_array(response) #move this to music model
     @music_info = response["suggestions"]
     @music_array = []
     @music_info.map do |music|
