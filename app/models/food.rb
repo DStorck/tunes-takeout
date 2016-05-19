@@ -14,10 +14,8 @@ class Food < ActiveRecord::Base
     @rating = data[:rating]
   end
 
-  def self.find(id)
-    data = HTTParty.get("https://api.yelp.com/v2/business/yelp-san-francisco").parsed_response
-
-    self.new(data)
+  def self.find_restaurant(id)
+    Yelp.client.business(id)
   end
 
   def self.restaurant_id_array(response) #move this to food model

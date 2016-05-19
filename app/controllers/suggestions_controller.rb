@@ -4,7 +4,7 @@ require_relative "../../lib/TunesTakeoutWrapper"
 class SuggestionsController < ApplicationController
 
   def show
-    @search = TunesTakeoutWrapper.search(params[:term])
+    @search = TunesTakeoutWrapper.search(params[:term], params[:limit])
     @music = Music.create_music_array(@search)
     @restaurant_id_array = Food.restaurant_id_array(@search)
     # @music = reject_playlists(@music)
@@ -19,7 +19,18 @@ class SuggestionsController < ApplicationController
 
   def index
     @top_twenty = TunesTakeoutWrapper.top_twenty
-  
+    @top_pairings = []
+    @top_twenty.each do |suggestion|
+      restaurant = Food.find_restaurant(suggestion["food_id"])
+      music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
+      @top_pairings << [music, restaurant, suggestion["id"]]
+    end
+    @top_pairings
+  end
+
+  def favorite
+    TunesTakeoutWrapper.favorite(current_user.uid, params[:id])
+    redirect_to root_path
   end
 
 

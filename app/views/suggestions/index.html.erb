@@ -2,8 +2,46 @@
 <%= form_tag '/suggestions/#{id}' do %>
   <%= label_tag :term %>
   <%= text_field_tag :term %>
+  <%= label_tag :limit %>
+  <%= text_field_tag :limit %>
+
   <%= submit_tag "GO GO GO!"%>
 <% end %>
 
-Top 20 Pairings
-<%= @top_twenty %>
+
+<div class="container">
+  <h2>Top 20 Pairings </h2>
+  <% if @top_pairings %>
+    <% @top_pairings.each do |music, restaurant, id| %>
+    <div class="row">
+
+
+      <div class= "col-md-6 music">
+
+        <%= form_tag  favorite_path, method: :post do %>
+        <%= hidden_field_tag :id, id %>
+        <%= submit_tag "Favorite"%>
+        <% end %>
+
+        <%= link_to music.name , music.external_urls["spotify"]%> <br>
+        <iframe src="https://embed.spotify.com/?uri=<%= "#{music.uri}" %>"
+          width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
+      </div>
+
+      <div class= "col-md-3 food">
+        <%= link_to restaurant.business.name, "https://www.yelp.com/biz/#{restaurant.business.id}"  %><br>
+        <%= restaurant.business.location.address.first %><br>
+        <%= restaurant.business.location.city %><br>
+        Phone: <%= restaurant.business.display_phone %><br>
+      </div>
+
+      <div class="col-md-3 food">
+        <%= image_tag restaurant.business.image_url%>
+     </div>
+
+    <br>
+    </div>
+    <hr>
+    <% end %>
+    <% end %>
+</div>

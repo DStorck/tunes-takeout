@@ -13,6 +13,7 @@ resources :food
 resources :user
 get '/auth/:provider/callback' => 'sessions#create'
 delete "/logout" => "sessions#destroy"
+post '/favorite' => "suggestions#favorite", as: :favorite
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
