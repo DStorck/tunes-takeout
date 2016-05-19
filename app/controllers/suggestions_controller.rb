@@ -1,5 +1,5 @@
 require 'yelp'
-require_relative "../../lib/TunesTakeoutWrapper"
+# require_relative "../../lib/TunesTakeoutWrapper"
 
 class SuggestionsController < ApplicationController
 
@@ -54,7 +54,14 @@ class SuggestionsController < ApplicationController
 
 
   def faves
-    @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+    @fav_ids = TunesTakeoutWrapper.favorite_ids(current_user.uid)
+    @faves = TunesTakeoutWrapper.suggestion_ids_into_info_array(@fav_ids)
+    @favorites = []
+    @faves.each do |suggestion|
+      restaurant = Food.find_restaurant(suggestion["food_id"])
+      music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
+      @favorites << [music, restaurant, suggestion["id"]]
+    end
   end
 
 

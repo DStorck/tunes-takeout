@@ -33,17 +33,16 @@ FAV_URL = "https://tunes-takeout-api.herokuapp.com/"
     @favorites = @response["suggestions"]
   end
 
-  def suggestion_ids_into_info_array(sug_id_array)
+  def self.suggestion_ids_into_info_array(sug_id_array)
     @info = []
-    fav_id_array.each do |suggestion_id|
+    sug_id_array.each do |suggestion_id|
       @info << HTTParty.get(FAV_URL + "/v1/suggestions/" + "#{suggestion_id}")
     end
-  end
-  @array_of_hashes = []
-  @info.each do |info|
-    @array_of_hashes << info['suggestion']
-  end
-  @array_of_hashes
+    @array_of_hashes = []
+    @info.each do |info|
+      @array_of_hashes << info['suggestion']
+    end
+    @array_of_hashes
   end
 
 end
