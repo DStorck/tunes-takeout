@@ -12,7 +12,7 @@ class TunesTakeoutWrapperTest < ActiveSupport::TestCase
         @pizza_pairing = TunesTakeoutWrapper.search("pizza", 4)
       end
 
-      it "returns a specified numbers of suggestions of food and music" do
+      it "returns a specified numbers of suggestions of food and music" , :vcr do
         choices = @pizza_pairing['suggestions'].count
         assert_equal choices, 4
       end

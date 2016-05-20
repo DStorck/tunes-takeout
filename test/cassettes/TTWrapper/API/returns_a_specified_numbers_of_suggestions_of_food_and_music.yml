@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?limit=4&query=pizza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Thu, 19 May 2016 23:57:59 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '599'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=pizza\u0026limit=4\u0026seed=pizza","suggestions":[{"id":"Vz3eIYve9AADSEwA","food_id":"meltdown-pizza-seattle","music_id":"1e70RG8LMwGZC5sdhfQ1vK","music_type":"artist"},{"id":"Vz3ecIve9AADSEwB","food_id":"mod-pizza-seattle-7","music_id":"1c8R0xZkfkFI03pc04cYAH","music_type":"artist"},{"id":"Vz3ecIve9AADSEwC","food_id":"pizzeria-22-seattle","music_id":"2CB2hDwXrpGyRKFFDDbBF3","music_type":"track"},{"id":"Vz3ecIve9AADSEwD","food_id":"napoli-pizzeria-seattle","music_id":"0hGTjyRqVvqtPEmLOkxOhY","music_type":"artist"}]}'
+    http_version: 
+  recorded_at: Thu, 19 May 2016 23:58:32 GMT
+recorded_with: VCR 3.0.1
