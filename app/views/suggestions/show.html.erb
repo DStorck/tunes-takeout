@@ -1,4 +1,5 @@
 <div class="container">
+  <% if @pairings %>
   <h2>Pairings </h2>
   <% @pairings.each do |music, restaurant, id| %>
   <div class="row">
@@ -41,4 +42,8 @@
   </div>
   <hr>
   <% end %>
+  <% else %>
+    <h2> Sorry, no pairings found for that ridiculous search term. </h2>
+    <%= image_tag "huh.png" ,class: 'huh'%>
+    <% end %>
 </div>
