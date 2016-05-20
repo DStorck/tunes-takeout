@@ -2,12 +2,26 @@
 
 class User < ActiveRecord::Base
   validates :provider, presence: true
-  validates :uid, presence: true 
+  validates :uid, presence: true
+  validate :provider_must_be_spotify
+  validate :name_cant_be_empty_string
+
+  def provider_must_be_spotify
+    if provider != "spotify"
+      errors.add(:provider, "provider must be spotify")
+    end
+  end
+
+  def name_cant_be_empty_string
+    if name == ""
+      errors.add(:name, "name can't be empty string")
+    end
+  end
 
   def self.find_or_create_from_omniauth(auth_hash)
   # Find or create a user
     user = self.find_by(uid: auth_hash["info"]["id"], provider: auth_hash["provider"])
-    if !@user.nil?
+    if !user.nil?
       return user
     else
       user = User.new

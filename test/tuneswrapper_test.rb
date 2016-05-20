@@ -41,8 +41,8 @@ class TunesTakeoutWrapperTest < ActiveSupport::TestCase
       it "will return top 20 choices to index", :vcr do
         assert_equal @top_twenty.class, Array
         assert_equal @top_twenty.count, 20
-        assert_equal @top_twenty.first.class, Hash
-        refute_nil @top_twenty.first["food_id"]
+        assert_equal @top_twenty.last.class, Hash
+        refute_nil @top_twenty.last["food_id"]
       end
 
       it "can create an array of suggestion of ids out of the API response", :vcr do
@@ -51,59 +51,20 @@ class TunesTakeoutWrapperTest < ActiveSupport::TestCase
 
       it "can favorite a suggestion" , :vcr do
         @original_count = @favorite_id_array.count
-        TunesTakeoutWrapper.favorite('dronaldson', "Vz9hW_LW7wADpMt8")
+        TunesTakeoutWrapper.favorite('dronaldson', "Vz92VPLW7wADpNDB")
         @new_count = TunesTakeoutWrapper.favorite_ids("dronaldson").count
 
         assert_equal (@original_count + 1), @new_count
-
       end
 
       it "can unfavorite a suggestion", :vcr do
+        TunesTakeoutWrapper.favorite('dronaldson', "Vz9hW_LW7wADpMt8")
         @original_count = @favorite_id_array.count
         TunesTakeoutWrapper.unfavorite('dronaldson', "Vz9hW_LW7wADpMt8")
         @new_count = TunesTakeoutWrapper.favorite_ids("dronaldson").count
         assert_equal (@original_count - 1), @new_count
       end
 
-
-
-      #
-      # check difference between number of favorites before and after
-      # it "can favorite pairings" do
-      # end
-      #
-      # it 'can unfavorite pairings' do
-      # end
-      #
-      # check class of array
-      # it 'can collect ids of all favorite pairings' do
-      # end
-      #
-      # it 'can turn a collection of favorite ids into a collection of suggestions' do
-      # end
-
     end
-
-
   end
 end
-
-
-#   describe "API" do
-#     before do
-#       @bulbasaur = Pokemon.find(1)
-#     end
-#
-#     it "knows its name", :vcr do
-#       assert_equal "bulbasaur", @bulbasaur.name
-#     end
-#
-#     it "doesn't have nils in its sprites", :vcr do
-#       refute @bulbasaur.sprite_urls.any? { |s| s.nil? }
-#     end
-#
-#     it "knows that it has moves", :vcr do
-#       assert_instance_of Array, @bulbasaur.moves
-#     end
-#   end
-# end
