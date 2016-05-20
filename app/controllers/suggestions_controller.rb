@@ -6,6 +6,7 @@ class SuggestionsController < ApplicationController
 
   def show
     params[:limit] = 5 if params[:limit] == ""
+    params[:limit] = 20 if params[:limit].to_i > 20
     @search = TunesTakeoutWrapper.search(params[:term], params[:limit])
     unless @search.nil?
       @suggestions = @search["suggestions"]
