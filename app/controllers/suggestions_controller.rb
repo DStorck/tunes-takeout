@@ -5,6 +5,7 @@ class SuggestionsController < ApplicationController
 
 
   def show
+    params[:limit] = 5 if params[:limit] == ""
     @search = TunesTakeoutWrapper.search(params[:term], params[:limit])
     unless @search.nil?
       @suggestions = @search["suggestions"]
@@ -54,11 +55,10 @@ class SuggestionsController < ApplicationController
   end
 
 
-
-  def reject_playlists(music_array)
-    music_array.reject do |id, type|
-      type == "playlist"
-    end
-  end
+  # def reject_playlists(music_array)
+  #   music_array.reject do |id, type|
+  #     type == "playlist"
+  #   end
+  # end
 
 end

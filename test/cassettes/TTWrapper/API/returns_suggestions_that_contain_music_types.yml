@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Thu, 19 May 2016 23:55:10 GMT
+      - Fri, 20 May 2016 19:14:22 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -29,12 +29,826 @@ http_interactions:
       X-Content-Type-Options:
       - nosniff
       Content-Length:
-      - '599'
+      - '597'
       Via:
       - 1.1 vegur
     body:
       encoding: UTF-8
-      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=pizza\u0026limit=4\u0026seed=pizza","suggestions":[{"id":"Vz3eIYve9AADSEwA","food_id":"meltdown-pizza-seattle","music_id":"1e70RG8LMwGZC5sdhfQ1vK","music_type":"artist"},{"id":"Vz3ecIve9AADSEwB","food_id":"mod-pizza-seattle-7","music_id":"1c8R0xZkfkFI03pc04cYAH","music_type":"artist"},{"id":"Vz3ecIve9AADSEwC","food_id":"pizzeria-22-seattle","music_id":"2CB2hDwXrpGyRKFFDDbBF3","music_type":"track"},{"id":"Vz3ecIve9AADSEwD","food_id":"napoli-pizzeria-seattle","music_id":"0hGTjyRqVvqtPEmLOkxOhY","music_type":"artist"}]}'
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=pizza\u0026limit=4\u0026seed=pizza","suggestions":[{"id":"Vz9QtfLW7wADpMfc","food_id":"meltdown-pizza-seattle","music_id":"1dCIyXk1BprrnDaYo66mbz","music_type":"album"},{"id":"Vz9QtfLW7wADpMfd","food_id":"mod-pizza-seattle-7","music_id":"1bcMZm2nS9nDqmBQ7XDa2T","music_type":"track"},{"id":"Vz9QtfLW7wADpMfe","food_id":"pizzeria-22-seattle","music_id":"2BFLVopHH692mUdIdbevKT","music_type":"album"},{"id":"Vz3ecIve9AADSEwD","food_id":"napoli-pizzeria-seattle","music_id":"0hGTjyRqVvqtPEmLOkxOhY","music_type":"artist"}]}'
     http_version: 
-  recorded_at: Thu, 19 May 2016 23:55:41 GMT
+  recorded_at: Fri, 20 May 2016 19:14:58 GMT
+- request:
+    method: get
+    uri: http://tunes-takeout-api.herokuapp.com/v1/suggestions/top?limit=20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '473'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"http://tunes-takeout-api.herokuapp.com/v1/suggestions/top?limit=20","suggestions":["Vz0KQY-RRwADboE-","Vz0KQY-RRwADboEQ","Vz0KO4-RRwADbn9t","Vz0KO4-RRwADbn9Q","Vz0KQY-RRwADboEq","Vz0KO4-RRwADbn9x","Vz0KNY-RRwADbn29","Vz0KQY-RRwADboFP","Vz0KO4-RRwADbn9I","Vz0KO4-RRwADbn9U","Vz0KO4-RRwADbn9b","Vz0KO4-RRwADbn85","Vz0KQY-RRwADboFB","Vz0KO4-RRwADbn9f","Vz0KO4-RRwADbn9V","Vz0KQY-RRwADboFN","Vz0KO4-RRwADbn8Z","Vz0KO4-RRwADbn8x","Vz0KO4-RRwADbn9c","Vz0KO4-RRwADbn9d"]}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:14:58 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboE-
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:22 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '213'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboE-","suggestion":{"id":"Vz0KQY-RRwADboE-","food_id":"a-la-mode-pies-seattle","music_id":"1OYLLmDS0pJVFRbUo19vrG","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:14:59 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboEQ
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:23 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '224'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboEQ","suggestion":{"id":"Vz0KQY-RRwADboEQ","food_id":"old-school-frozen-custard-seattle","music_id":"1hq33mOCO3eLxvgBl0leqP","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:14:59 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9t
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:23 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '221'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9t","suggestion":{"id":"Vz0KO4-RRwADbn9t","food_id":"taqueria-la-pasadita-seattle-3","music_id":"0jEsVskTgxfybttvO9gnLK","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:14:59 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9Q
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '213'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9Q","suggestion":{"id":"Vz0KO4-RRwADbn9Q","food_id":"nacho-borracho-seattle","music_id":"4DWLyse4wDNthzOYvFZQfi","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:00 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboEq
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '222'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboEq","suggestion":{"id":"Vz0KQY-RRwADboEq","food_id":"le-panier-french-bakery-seattle","music_id":"1YPtiR8vL7n29XpP0dTmGc","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:00 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '211'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9x","suggestion":{"id":"Vz0KO4-RRwADbn9x","food_id":"el-camion-seattle-13","music_id":"28CkJzoE5LBWJpzQr5g0f4","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:00 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KNY-RRwADbn29
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '212'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KNY-RRwADbn29","suggestion":{"id":"Vz0KNY-RRwADbn29","food_id":"sweet-iron-seattle-2","music_id":"0cOpQTKJdCEzz2wplnnyP6","music_type":"artist"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:01 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFP
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:24 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '217'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFP","suggestion":{"id":"Vz0KQY-RRwADboFP","food_id":"piroshky-piroshky-seattle","music_id":"13kFHFPF8dWNyK2yvgXf3S","music_type":"artist"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:01 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9I
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '228'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9I","suggestion":{"id":"Vz0KO4-RRwADbn9I","food_id":"memos-mexican-food-restaurant-seattle","music_id":"4OpGuePj1YVgTIXi2WLHVn","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:01 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9U
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:25 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '216'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9U","suggestion":{"id":"Vz0KO4-RRwADbn9U","food_id":"malenas-taco-shop-seattle","music_id":"1mFWLJb6bVP4IroYrJVV5R","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:02 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9b
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '211'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9b","suggestion":{"id":"Vz0KO4-RRwADbn9b","food_id":"tacos-chukis-seattle","music_id":"0AyB84D5n6ISyfZMA84NML","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:02 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn85
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '229'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn85","suggestion":{"id":"Vz0KO4-RRwADbn85","food_id":"taqueria-costa-alegre-taco-bus-seattle","music_id":"4QB9QRThl5plfwJmcpFtcp","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:02 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFB
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '218'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFB","suggestion":{"id":"Vz0KQY-RRwADboFB","food_id":"despi-delite-bakery-seattle","music_id":"0CsvsckUEF5oipX8VtYPlw","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:03 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:26 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '219'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9f","suggestion":{"id":"Vz0KO4-RRwADbn9f","food_id":"cactus-restaurants-seattle-2","music_id":"20OmjCaPoZZg3hQ9iOKmrq","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:03 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9V
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:27 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '217'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9V","suggestion":{"id":"Vz0KO4-RRwADbn9V","food_id":"taqueria-el-antojo-seattle","music_id":"3i3f6NmMLCwSOn0rwzKa8y","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:03 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFN
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:27 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '226'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFN","suggestion":{"id":"Vz0KQY-RRwADboFN","food_id":"emerald-city-fish-and-chips-seattle","music_id":"18nhNX9AEFPINp1txOsaJS","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:04 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn8Z
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '215'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn8Z","suggestion":{"id":"Vz0KO4-RRwADbn8Z","food_id":"bebas-and-amigos-seattle","music_id":"2IO61W1ZRIwpWUXiO6AAxJ","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:04 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn8x
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '223'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn8x","suggestion":{"id":"Vz0KO4-RRwADbn8x","food_id":"blue-water-taco-grill-seattle-14","music_id":"1pujwuePmCgDFQY32P5elo","music_type":"album"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:04 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:29 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '213'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9c","suggestion":{"id":"Vz0KO4-RRwADbn9c","food_id":"el-taco-loco-seattle-2","music_id":"0qO38KC2CGDmNSOAb2rpzj","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:05 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9d
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:28 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '209'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9d","suggestion":{"id":"Vz0KO4-RRwADbn9d","food_id":"el-cabrito-seattle","music_id":"2rV6X8xj2EmDURLce7ZH0Y","music_type":"track"}}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:05 GMT
+- request:
+    method: get
+    uri: https://tunes-takeout-api.herokuapp.com//v1/users/dronaldson/favorites
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Cowboy
+      Date:
+      - Fri, 20 May 2016 19:14:29 GMT
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Content-Type-Options:
+      - nosniff
+      Content-Length:
+      - '172'
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/users/dronaldson/favorites","suggestions":["Vz0KQY-RRwADboE-","Vz3c3Yve9AADSEvo","Vz0KQY-RRwADboEQ","Vz0KO4-RRwADbn9t"]}'
+    http_version: 
+  recorded_at: Fri, 20 May 2016 19:15:05 GMT
 recorded_with: VCR 3.0.1

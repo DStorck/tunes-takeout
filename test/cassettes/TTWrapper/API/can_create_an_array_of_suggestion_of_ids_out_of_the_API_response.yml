@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:35 GMT
+      - Fri, 20 May 2016 19:14:06 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -36,7 +36,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/search?query=pizza\u0026limit=4\u0026seed=pizza","suggestions":[{"id":"Vz9QtfLW7wADpMfc","food_id":"meltdown-pizza-seattle","music_id":"1dCIyXk1BprrnDaYo66mbz","music_type":"album"},{"id":"Vz9QtfLW7wADpMfd","food_id":"mod-pizza-seattle-7","music_id":"1bcMZm2nS9nDqmBQ7XDa2T","music_type":"track"},{"id":"Vz9QtfLW7wADpMfe","food_id":"pizzeria-22-seattle","music_id":"2BFLVopHH692mUdIdbevKT","music_type":"album"},{"id":"Vz3ecIve9AADSEwD","food_id":"napoli-pizzeria-seattle","music_id":"0hGTjyRqVvqtPEmLOkxOhY","music_type":"artist"}]}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:12 GMT
+  recorded_at: Fri, 20 May 2016 19:14:43 GMT
 - request:
     method: get
     uri: http://tunes-takeout-api.herokuapp.com/v1/suggestions/top?limit=20
@@ -58,7 +58,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:35 GMT
+      - Fri, 20 May 2016 19:14:07 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -73,7 +73,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"http://tunes-takeout-api.herokuapp.com/v1/suggestions/top?limit=20","suggestions":["Vz0KQY-RRwADboE-","Vz0KQY-RRwADboEQ","Vz0KO4-RRwADbn9t","Vz0KO4-RRwADbn9Q","Vz0KQY-RRwADboEq","Vz0KO4-RRwADbn9x","Vz0KNY-RRwADbn29","Vz0KQY-RRwADboFP","Vz0KO4-RRwADbn9I","Vz0KO4-RRwADbn9U","Vz0KO4-RRwADbn9b","Vz0KO4-RRwADbn85","Vz0KQY-RRwADboFB","Vz0KO4-RRwADbn9f","Vz0KO4-RRwADbn9V","Vz0KQY-RRwADboFN","Vz0KO4-RRwADbn8Z","Vz0KO4-RRwADbn8x","Vz0KO4-RRwADbn9c","Vz0KO4-RRwADbn9d"]}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:12 GMT
+  recorded_at: Fri, 20 May 2016 19:14:43 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboE-
@@ -95,7 +95,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:36 GMT
+      - Fri, 20 May 2016 19:14:07 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -110,7 +110,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboE-","suggestion":{"id":"Vz0KQY-RRwADboE-","food_id":"a-la-mode-pies-seattle","music_id":"1OYLLmDS0pJVFRbUo19vrG","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:12 GMT
+  recorded_at: Fri, 20 May 2016 19:14:43 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboEQ
@@ -132,7 +132,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:37 GMT
+      - Fri, 20 May 2016 19:14:07 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -147,7 +147,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboEQ","suggestion":{"id":"Vz0KQY-RRwADboEQ","food_id":"old-school-frozen-custard-seattle","music_id":"1hq33mOCO3eLxvgBl0leqP","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:13 GMT
+  recorded_at: Fri, 20 May 2016 19:14:44 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9t
@@ -169,7 +169,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:37 GMT
+      - Fri, 20 May 2016 19:14:08 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -184,7 +184,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9t","suggestion":{"id":"Vz0KO4-RRwADbn9t","food_id":"taqueria-la-pasadita-seattle-3","music_id":"0jEsVskTgxfybttvO9gnLK","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:13 GMT
+  recorded_at: Fri, 20 May 2016 19:14:44 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9Q
@@ -206,7 +206,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:37 GMT
+      - Fri, 20 May 2016 19:14:08 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -221,7 +221,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9Q","suggestion":{"id":"Vz0KO4-RRwADbn9Q","food_id":"nacho-borracho-seattle","music_id":"4DWLyse4wDNthzOYvFZQfi","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:14 GMT
+  recorded_at: Fri, 20 May 2016 19:14:44 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboEq
@@ -243,7 +243,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:37 GMT
+      - Fri, 20 May 2016 19:14:08 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -258,7 +258,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboEq","suggestion":{"id":"Vz0KQY-RRwADboEq","food_id":"le-panier-french-bakery-seattle","music_id":"1YPtiR8vL7n29XpP0dTmGc","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:14 GMT
+  recorded_at: Fri, 20 May 2016 19:14:45 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9x
@@ -280,7 +280,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:38 GMT
+      - Fri, 20 May 2016 19:14:09 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -295,7 +295,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9x","suggestion":{"id":"Vz0KO4-RRwADbn9x","food_id":"el-camion-seattle-13","music_id":"28CkJzoE5LBWJpzQr5g0f4","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:14 GMT
+  recorded_at: Fri, 20 May 2016 19:14:45 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KNY-RRwADbn29
@@ -317,7 +317,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:39 GMT
+      - Fri, 20 May 2016 19:14:09 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -332,7 +332,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KNY-RRwADbn29","suggestion":{"id":"Vz0KNY-RRwADbn29","food_id":"sweet-iron-seattle-2","music_id":"0cOpQTKJdCEzz2wplnnyP6","music_type":"artist"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:14 GMT
+  recorded_at: Fri, 20 May 2016 19:14:45 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFP
@@ -354,7 +354,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:39 GMT
+      - Fri, 20 May 2016 19:14:09 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -369,7 +369,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFP","suggestion":{"id":"Vz0KQY-RRwADboFP","food_id":"piroshky-piroshky-seattle","music_id":"13kFHFPF8dWNyK2yvgXf3S","music_type":"artist"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:15 GMT
+  recorded_at: Fri, 20 May 2016 19:14:46 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9I
@@ -391,7 +391,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:39 GMT
+      - Fri, 20 May 2016 19:14:10 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -406,7 +406,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9I","suggestion":{"id":"Vz0KO4-RRwADbn9I","food_id":"memos-mexican-food-restaurant-seattle","music_id":"4OpGuePj1YVgTIXi2WLHVn","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:15 GMT
+  recorded_at: Fri, 20 May 2016 19:14:46 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9U
@@ -428,7 +428,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:39 GMT
+      - Fri, 20 May 2016 19:14:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -443,7 +443,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9U","suggestion":{"id":"Vz0KO4-RRwADbn9U","food_id":"malenas-taco-shop-seattle","music_id":"1mFWLJb6bVP4IroYrJVV5R","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:16 GMT
+  recorded_at: Fri, 20 May 2016 19:14:46 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9b
@@ -465,7 +465,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:40 GMT
+      - Fri, 20 May 2016 19:14:10 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -480,7 +480,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9b","suggestion":{"id":"Vz0KO4-RRwADbn9b","food_id":"tacos-chukis-seattle","music_id":"0AyB84D5n6ISyfZMA84NML","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:16 GMT
+  recorded_at: Fri, 20 May 2016 19:14:47 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn85
@@ -502,7 +502,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:40 GMT
+      - Fri, 20 May 2016 19:14:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -517,7 +517,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn85","suggestion":{"id":"Vz0KO4-RRwADbn85","food_id":"taqueria-costa-alegre-taco-bus-seattle","music_id":"4QB9QRThl5plfwJmcpFtcp","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:16 GMT
+  recorded_at: Fri, 20 May 2016 19:14:47 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFB
@@ -539,7 +539,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:40 GMT
+      - Fri, 20 May 2016 19:14:11 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -554,7 +554,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFB","suggestion":{"id":"Vz0KQY-RRwADboFB","food_id":"despi-delite-bakery-seattle","music_id":"0CsvsckUEF5oipX8VtYPlw","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:17 GMT
+  recorded_at: Fri, 20 May 2016 19:14:47 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9f
@@ -576,7 +576,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:40 GMT
+      - Fri, 20 May 2016 19:14:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -591,7 +591,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9f","suggestion":{"id":"Vz0KO4-RRwADbn9f","food_id":"cactus-restaurants-seattle-2","music_id":"20OmjCaPoZZg3hQ9iOKmrq","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:17 GMT
+  recorded_at: Fri, 20 May 2016 19:14:47 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9V
@@ -613,7 +613,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:41 GMT
+      - Fri, 20 May 2016 19:14:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -628,7 +628,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9V","suggestion":{"id":"Vz0KO4-RRwADbn9V","food_id":"taqueria-el-antojo-seattle","music_id":"3i3f6NmMLCwSOn0rwzKa8y","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:17 GMT
+  recorded_at: Fri, 20 May 2016 19:14:48 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KQY-RRwADboFN
@@ -650,7 +650,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:41 GMT
+      - Fri, 20 May 2016 19:14:12 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -665,7 +665,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KQY-RRwADboFN","suggestion":{"id":"Vz0KQY-RRwADboFN","food_id":"emerald-city-fish-and-chips-seattle","music_id":"18nhNX9AEFPINp1txOsaJS","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:18 GMT
+  recorded_at: Fri, 20 May 2016 19:14:49 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn8Z
@@ -687,7 +687,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:41 GMT
+      - Fri, 20 May 2016 19:14:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -702,7 +702,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn8Z","suggestion":{"id":"Vz0KO4-RRwADbn8Z","food_id":"bebas-and-amigos-seattle","music_id":"2IO61W1ZRIwpWUXiO6AAxJ","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:18 GMT
+  recorded_at: Fri, 20 May 2016 19:14:49 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn8x
@@ -724,7 +724,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:42 GMT
+      - Fri, 20 May 2016 19:14:13 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -739,7 +739,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn8x","suggestion":{"id":"Vz0KO4-RRwADbn8x","food_id":"blue-water-taco-grill-seattle-14","music_id":"1pujwuePmCgDFQY32P5elo","music_type":"album"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:18 GMT
+  recorded_at: Fri, 20 May 2016 19:14:49 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9c
@@ -761,7 +761,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:42 GMT
+      - Fri, 20 May 2016 19:14:14 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -776,7 +776,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9c","suggestion":{"id":"Vz0KO4-RRwADbn9c","food_id":"el-taco-loco-seattle-2","music_id":"0qO38KC2CGDmNSOAb2rpzj","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:18 GMT
+  recorded_at: Fri, 20 May 2016 19:14:50 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/suggestions/Vz0KO4-RRwADbn9d
@@ -798,7 +798,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:43 GMT
+      - Fri, 20 May 2016 19:14:14 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -813,7 +813,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/suggestions/Vz0KO4-RRwADbn9d","suggestion":{"id":"Vz0KO4-RRwADbn9d","food_id":"el-cabrito-seattle","music_id":"2rV6X8xj2EmDURLce7ZH0Y","music_type":"track"}}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:19 GMT
+  recorded_at: Fri, 20 May 2016 19:14:50 GMT
 - request:
     method: get
     uri: https://tunes-takeout-api.herokuapp.com//v1/users/dronaldson/favorites
@@ -835,7 +835,7 @@ http_interactions:
       Server:
       - Cowboy
       Date:
-      - Fri, 20 May 2016 19:14:43 GMT
+      - Fri, 20 May 2016 19:14:14 GMT
       Connection:
       - keep-alive
       Content-Type:
@@ -850,5 +850,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"href":"https://tunes-takeout-api.herokuapp.com/v1/users/dronaldson/favorites","suggestions":["Vz0KQY-RRwADboE-","Vz3c3Yve9AADSEvo","Vz0KQY-RRwADboEQ","Vz0KO4-RRwADbn9t"]}'
     http_version: 
-  recorded_at: Fri, 20 May 2016 19:15:19 GMT
+  recorded_at: Fri, 20 May 2016 19:14:50 GMT
 recorded_with: VCR 3.0.1

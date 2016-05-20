@@ -1,5 +1,5 @@
 <div class="container">
-  <% if @pairings %>
+  <% unless @pairings.empty? %>
   <h2>Pairings </h2>
   <% @pairings.each do |music, restaurant, id| %>
   <div class="row">
