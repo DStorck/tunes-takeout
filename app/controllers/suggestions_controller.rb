@@ -1,5 +1,4 @@
 require 'yelp'
-# require_relative "../../lib/TunesTakeoutWrapper"
 
 class SuggestionsController < ApplicationController
 
@@ -9,26 +8,14 @@ class SuggestionsController < ApplicationController
     @search = TunesTakeoutWrapper.search(params[:term], params[:limit])
     unless @search.nil?
       @suggestions = @search["suggestions"]
-      @pairings = []
-      @suggestions.each do |suggestion|
-        restaurant = Food.find_restaurant(suggestion["food_id"])
-        music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
-        @pairings << [music, restaurant, suggestion["id"]]
-      end
+      @pairings = turn_suggestions_into_instances(@suggestions)
     end
     @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid) if current_user
   end
 
-
   def index
     @top_twenty = TunesTakeoutWrapper.top_twenty
-    @top_pairings = []
-    @top_twenty.each do |suggestion|
-      restaurant = Food.find_restaurant(suggestion["food_id"])
-      music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
-      @top_pairings << [music, restaurant, suggestion["id"]]
-    end
-    @top_pairings
+    @top_pairings = turn_suggestions_into_instances(@top_twenty)
     @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid) if current_user
   end
 
@@ -42,23 +29,22 @@ class SuggestionsController < ApplicationController
     redirect_to favorite_path
   end
 
-
   def faves
     @fav_ids = TunesTakeoutWrapper.favorite_ids(current_user.uid)
     @faves = TunesTakeoutWrapper.suggestion_ids_into_info_array(@fav_ids)
-    @favorites = []
-    @faves.each do |suggestion|
-      restaurant = Food.find_restaurant(suggestion["food_id"])
-      music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
-      @favorites << [music, restaurant, suggestion["id"]]
-    end
+    @favorites = turn_suggestions_into_instances(@faves)
   end
 
+  private
 
-  # def reject_playlists(music_array)
-  #   music_array.reject do |id, type|
-  #     type == "playlist"
-  #   end
-  # end
+  def turn_suggestions_into_instances(suggestions)
+    @pairings = []
+    suggestions.each do |suggestion|
+      restaurant = Food.find_restaurant(suggestion["food_id"])
+      music = Music.music_search(suggestion["music_type"], suggestion["music_id"])
+      @pairings << [music, restaurant, suggestion["id"]]
+    end
+    @pairings
+  end
 
 end

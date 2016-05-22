@@ -12,19 +12,18 @@
   <main class="container">
   <nav class="navbar navbar-default">
     <ul class="nav navbar-nav nav-pills">
-      <li><%= image_tag "Spotify_Icon_RGB_Green.png" %></li>
+      <li><%= image_tag "Spotify_Icon_RGB_Green.png" unless current_user%></li>
       <li><%= "Hi #{ current_user.name }!" if current_user %></li>
-      <li><%= image_tag current_user.photo_url if current_user %></li>
+      <li><%= link_to (image_tag current_user.photo_url), "https://play.spotify.com/browse" if current_user %></li>
       <li><%= link_to "Home", root_path %></li>
       <li><%= link_to "Log In", '/auth/spotify' unless current_user %></li>
-      <li><%= link_to "Profile", "https://play.spotify.com/browse" if current_user %></li>
+      <li><%= link_to "Spotify Profile", "https://play.spotify.com/browse" if current_user %></li>
       <li><%= link_to "Favorites", favorite_path, method: :get if current_user %> </li>
       <li><%= link_to "Log Out", logout_path, method: :delete if current_user%></li>
     </ul>
   </nav>
   <%= yield %>
 </main>
-
 
 
 
