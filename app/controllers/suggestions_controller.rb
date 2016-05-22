@@ -3,7 +3,6 @@ require 'yelp'
 
 class SuggestionsController < ApplicationController
 
-
   def show
     params[:limit] = 5 if params[:limit] == ""
     params[:limit] = 20 if params[:limit].to_i > 20

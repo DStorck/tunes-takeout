@@ -22,20 +22,20 @@
 
 
     <div class= "col-md-5 music">
-      <%= link_to music.name , music.external_urls["spotify"]%> <br>
+       <%= music.type.capitalize %>: <%= link_to music.name , music.url%><br>
       <iframe src="https://embed.spotify.com/?uri=<%= "#{music.uri}" %>"
         width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
     </div>
 
     <div class= "col-md-3 food">
-      <%= link_to restaurant.business.name, "https://www.yelp.com/biz/#{restaurant.business.id}"  %><br>
-      <%= restaurant.business.location.address.first %><br>
-      <%= restaurant.business.location.city %><br>
-      Phone: <%= restaurant.business.display_phone %><br>
+      <%= link_to restaurant.name, "https://www.yelp.com/biz/#{restaurant.business_id}"  %><br>
+      <%= restaurant.address %><br>
+      <%= restaurant.city %><br>
+      Phone: <%= restaurant.phone %><br>
     </div>
 
     <div class="col-md-3 food">
-      <%= image_tag restaurant.business.image_url%>
+      <%= image_tag restaurant.image_url%>
    </div>
 
   <br>

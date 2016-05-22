@@ -1,14 +1,14 @@
 require 'rspotify'
 
-class Music < ActiveRecord::Base
-  attr_reader :item_id, :type, :name, :url, :image_url #type can be album, track, artist,playlist
+class Music
+  attr_reader :item_id, :type, :name, :url, :image_url , :uri #type can be album, track, artist,playlist
 
   def initialize(data)
-    # @item_id = data[:id]
-    # @type = data[:name]
+    @item_id = data.id
+    @type = data.type
     @name = data.name
-    # @url = data[:image_url]
-    # @image_url = data[:phone]
+    @url = data.external_urls["spotify"]
+    @uri = data.uri
   end
 
   def self.create_music_array(response) #move this to music model
@@ -20,7 +20,6 @@ class Music < ActiveRecord::Base
     @music_array
   end
 
-
   def self.music_search(type, id)  #move this to music model
     case type
     when "album" then search = RSpotify::Album.find(id)
@@ -28,15 +27,17 @@ class Music < ActiveRecord::Base
     when "artist" then search = RSpotify::Artist.find(id)
     end
     search
+    return self.new(search)
   end
+
 
   private
 
-  def reject_playlists(music_array)
-    music_array.reject do |id, type|
-      type == "playlist"
-    end
-  end
+  # def reject_playlists(music_array)
+  #   music_array.reject do |id, type|
+  #     type == "playlist"
+  #   end
+  # end
   # embed into paage to play it     https://play.spotify.com/track/2hitsKa8SthKhRJBXUHbIv
 
 end
