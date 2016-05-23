@@ -3,14 +3,11 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
 
   def setup
-    #user.photo_url = auth_hash["info"]['images'][0]['url']
-     # @known = OmniAuth.config.mock_auth[:spotify_known]
     @known = {
       "provider" => "spotify",
       "info" =>  { "id" => "known_user", "display_name" => "known user" , "images" => ["url" => "http://blah.com"]} }
     @unknown = { "provider" => "spotify", "info" =>
         { "id" => "unknown_user", "display_name" => "unknown user" , "images" => ["url" => "http://blah.com"]} }
-    # @unknown = OmniAuth.config.mock_auth[:spotify_unknown]
     @unknown_with_uid = OmniAuth.config.mock_auth[:spotify_uid]
   end
 
@@ -59,13 +56,4 @@ class UserTest < ActiveSupport::TestCase
     assert user.errors.keys.include?(:uid), "uid is not in the errors hash"
   end
 
-  test "can create user from omniauth hash" do
-
-  end
-
-
 end
-
-
-# in schema
-# enum provider: [ :spotify]

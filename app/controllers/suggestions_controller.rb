@@ -15,7 +15,7 @@ class SuggestionsController < ApplicationController
 
   def index
     @top_twenty = TunesTakeoutWrapper.top_twenty
-    @top_pairings = turn_suggestions_into_instances(@top_twenty)
+    @pairings = turn_suggestions_into_instances(@top_twenty)
     @favorites = TunesTakeoutWrapper.favorite_ids(current_user.uid) if current_user
   end
 

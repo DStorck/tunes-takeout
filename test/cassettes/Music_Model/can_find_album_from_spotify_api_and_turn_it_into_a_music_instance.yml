@@ -1,0 +1,82 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.spotify.com/v1/albums/1Bg7byH7AeQhvwfXs4iRiG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sun, 22 May 2016 21:17:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=600
+      Cache-Control:
+      - public, max-age=7200
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS, PUT, DELETE
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Max-Age:
+      - '604800'
+      Access-Control-Allow-Headers:
+      - Accept, Authorization, Origin, Content-Type
+      Content-Encoding:
+      - gzip
+      X-Content-Type-Options:
+      - nosniff
+      Strict-Transport-Security:
+      - max-age=31536000;
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAOxY227jNhB9368Q/FC0QLLmVRINLIqN02yDImmy2WwTFIVB
+        kVTEtSypujhxFvn3SpQt3yLHdRZ5CAK/zQzPkHPmjEV+f2dZHR56xWiQTxLV
+        sXpWJ9PRTag6e8aV5jrLs8r+t/W9tJQ2dZerNOLhoEhD46ntpSdL4lz7E4MS
+        5HmS9brdOFHR+6njvYhH3RqyS4Z/sCt9NLqw0/C+f3R8TQ/vj1nHQD3s1ZmC
+        VPlLYDzRS1hjOIXL2vCmSFoanM1BER/VFfgrTkNp9QM+SnQczdxNgeqUM3OR
+        6rps9b56tbfXfr4H65+6tmOuQ+6FajDi6VDNqty5vOhMI0ScTFJ9E6wQkJcM
+        mJQ/93+xEIDUOiryIlVWP+RZpsXahvsm7d76+rPt1p8tbruhX8sF9jtFIkws
+        YJg5NoAAEEJJnfhde9ds2TNVh3bhwY3jTX53PqrzYHzrX2VEf9af5iluVJSq
+        aanqvW7VQBV21gZuYKbdszFkxG/UMk2BqqirTDYBTbOES/spdyNkVG6lawC6
+        rgJU+pASRzEP2Y4UkCsBCIJCII+60vVo+XNmFN1qmQfTFEscz5NjsG1yGwuG
+        scK2Iwhzyz0wKV3uuh6A2MZIcsQhpBSuJS9TtCS3yZa5HcQxRNKBvscFtBUk
+        XAKPlQVADsOuD6EDlG+zRw6+0JuNgj+OY8FlbH3iIb+b1BQlcVKEPNW5aTaE
+        jTFVoeKZGkie1ysrPexDtA9IZy1gkKRK6KyaCVWo5FPkPOViuNjUz+67bg35
+        a+z7mco/gJ9CPdL5BwqagZar0VK7PT6sNw/sHzq0Fwb3jx3eWw/wLYb4hkG+
+        2zA3p667r+bgqaFuoqTOxCAqRp5KKz+cO4qU5+V2BzW50LUhnXvVXRJqoY2y
+        fB5masHTSvF2BJt+68Ivx+fXtycH+i6/PxBBfKGGOLxsztmk24bbuoPbIBuo
+        2Wx9ImyTsk1AKc2xVreD1UGTNINmlOD9aVQXMU6J8hwqMUXAkS6TwLWlI30J
+        fSnLolPXVoLM8c1xHuWsaScTMl+x2kvG3dtU4maCvon5FYoZIcdxwQuK2bv+
+        t/9tEl8Ral//mfXpSaBP+88T8+OQa2J+Iqyh9YtOrDOd76pihmyBmc2BQ7FL
+        HEp9RoigjkcxVDZzMVfKQ8RvVzHaVcUbavum4letYkxd9wX/ktHhZfr1LPgW
+        JxfReXol/PzOPS2epeIWyFUVPxXW0HoR8GF599lRxA6CDNqMcg644zIuEKKY
+        ewALxKjHPc/jDCO6QcR4RxFvKu2biF+ziAmlju28nIjJ4fA8iPID+ttn+TUs
+        goPhbYhPnyXiFshVET8VtvZdfRIvkPo/pexTIRFnDDBhE4aER0H51wwBkp7r
+        c0oVlUyUX9vtUiY7SnlTgZs26phLdLWazp5EoulTWFSE4dRUX7kr4yzIHC8u
+        spXAPM65qYp5gagfAhoFVJf7+nFgrfUrV6/tLevhPwAAAP//AwBFkFpnkhUA
+        AA==
+    http_version: 
+  recorded_at: Sun, 22 May 2016 21:18:35 GMT
+recorded_with: VCR 3.0.1
